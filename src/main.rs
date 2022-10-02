@@ -33,7 +33,9 @@ fn parse_number<
     .parse(input)
 }
 
-
+fn parse_str<'i, E: ParseError<&'i str>>(input: &'i str) -> IResult<&'i str, &'i str, E> {
+    todo!()
+}
 
 fn main() {
     println!("Hello, world!");
